@@ -33,6 +33,49 @@
             }
         });
     </script> 
+    <!-- Track an add_to_cart event for all products on the course page -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'add_to_cart',
+    'ecommerce': {
+      'add': {
+        'products': [{
+          'item_id': '12345',
+          'item_name': 'Introduction to Ecommerce',
+          'affiliation': 'Ecommerce Academy',
+          'currency': 'USD',
+          'discount': '10%',
+          'item_brand': 'Ecommerce Academy',
+          'item_category': 'Courses',
+          'item_category2': 'Marketing',
+          'item_category3': 'Ecommerce',
+          'item_category4': '',
+          'item_variant': 'Online Course',
+          'location_id': 'New York',
+          'price': '99.99',
+          'quantity': 1
+        },{
+          'item_id': '67890',
+          'item_name': 'Advanced Ecommerce Strategies',
+          'affiliation': 'Ecommerce Academy',
+          'currency': 'USD',
+          'discount': '',
+          'item_brand': 'Ecommerce Academy',
+          'item_category': 'Courses',
+          'item_category2': 'Marketing',
+          'item_category3': 'Ecommerce',
+          'item_category4': '',
+          'item_variant': 'Online Course',
+          'location_id': 'New York',
+          'price': '199.99',
+          'quantity': 1
+        }]
+      }
+    }
+  });
+</script>
+
     <body>
     <div>This is where the purchase form would go</div>
     <button id="purchase">Purchase</button>
